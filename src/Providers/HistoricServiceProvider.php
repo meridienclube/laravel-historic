@@ -1,6 +1,6 @@
 <?php
 
-namespace ConfrariaWeb\Select2\Providers;
+namespace ConfrariaWeb\Historic\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
