@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Blade;
 class HistoricServiceProvider extends ServiceProvider
 {
 
-
     /**
      * Bootstrap services.
      *
@@ -17,7 +16,7 @@ class HistoricServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(__DIR__ . '/../Views', 'historic');
-        $this->loadMigrationsFrom(__DIR__ . '/../Databases/Migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../Databases');
         $this->publishes([__DIR__ . '/../../config/cw_historic.php' => config_path('cw_historic.php')], 'config');
 
         Blade::component('historic::components.list', 'historic');

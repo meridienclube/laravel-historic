@@ -14,9 +14,7 @@
             "email": "confrariaweb@gmail.com"
         }
     ],
-    "require": {
-        "confrariaweb/vendor": "dev-master"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "ConfrariaWeb\\Historic\\": "src"
