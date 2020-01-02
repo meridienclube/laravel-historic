@@ -25,10 +25,12 @@ class HistoricListener
      */
     public function handle($event)
     {
-        $obj = ($event->obj) ? $event->obj : null;
-        $historic = isset($event->historic) ? $event->historic : NULL;
-        if (isset($obj) && isset($historic)) {
-            $obj->register($historic);
+        if(config('cw_historic.actived')) {
+            $obj = ($event->obj) ? $event->obj : null;
+            $historic = isset($event->historic) ? $event->historic : NULL;
+            if (isset($obj) && isset($historic)) {
+                $obj->register($historic);
+            }
         }
     }
 }
