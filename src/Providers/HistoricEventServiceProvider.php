@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace ConfrariaWeb\Historic\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use ConfrariaWeb\Historic\Listeners\HistoricListener;
