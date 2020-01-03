@@ -13,10 +13,9 @@ class HistoricEventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-
-        /*'App\Events\TaskUpdatedEvent' => [
+        'App\Events\TaskUpdatedEvent' => [
             'ConfrariaWeb\Historic\Listeners\HistoricListener',
-        ]*/
+        ]
     ];
 
     /**
