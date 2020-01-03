@@ -1,0 +1,46 @@
+<?php
+
+namespace App\Historics;
+
+use ConfrariaWeb\Historic\Contracts\HistoricContract;
+
+class GenericRepository implements HistoricContract
+{
+
+    protected $obj;
+
+    public function __construct($obj)
+    {
+        $this->obj = $obj;
+    }
+
+    public function data()
+    {
+        return [
+            'action' => 'created',
+            'content' => $this->obj->name . ' created'
+        ];
+    }
+
+    public function title()
+    {
+        return $this->obj->name . ' created';
+    }
+
+    public function user($collunn = null)
+    {
+        if ($collunn == 'id') {
+            return auth()->id();
+        }
+        return auth()->user();
+    }
+
+}
+
+
+
+
+
+
+
+
