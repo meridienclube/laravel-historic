@@ -23,7 +23,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ConfrariaWeb\\Historic\\Providers\\HistoricServiceProvider"
+                "ConfrariaWeb\\Historic\\Providers\\HistoricServiceProvider",
+                "ConfrariaWeb\\Historic\\Providers\\HistoricEventServiceProvider"
             ]
         }
     },
