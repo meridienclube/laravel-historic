@@ -3,7 +3,6 @@
 namespace ConfrariaWeb\Historic\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use ConfrariaWeb\Historic\Listeners\HistoricListener;
 
 class HistoricEventServiceProvider extends ServiceProvider
 {
@@ -12,11 +11,7 @@ class HistoricEventServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $listen = [
-        /*'App\Events\TaskUpdatedEvent' => [
-            'ConfrariaWeb\Historic\Listeners\HistoricListener',
-        ]*/
-    ];
+    protected $listen = [];
 
     /**
      * Register any events for your application.
@@ -27,6 +22,10 @@ class HistoricEventServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-        //
+    }
+
+    public function listens()
+    {
+        return config('cw_historic.listen')?? $this->listen;
     }
 }
