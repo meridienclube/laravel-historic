@@ -1,9 +1,5 @@
 # Package Historic Laravel
 
-## Config
-
-By installing this package you will have the file "config/cw_historic.php" and in it you can configure if it will be active the history recording and also the events that will be listened.
-
 ## Make
 
 You can create the history class from the terminal with the following artisan command:
@@ -22,6 +18,10 @@ public function __construct(User $user)
     $this->historic = new UserUpdatedHistoric($user);
 }
 ```
+
+## Config
+
+By installing this package you will have the file "config/cw_historic.php" and in it you can configure if it will be active the history recording and also the events that will be listened.
 
 ## License
 
