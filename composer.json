@@ -30,8 +30,8 @@
     },
     "minimum-stability": "dev",
     "scripts": {
-        "post-root-package-install": [
-            "@php artisan vendor:publish --tag=cw_historic"
+        "post-package-install": [
+            "@php artisan vendor:publish --tag=cw_historic --force"
         ]
     }
 }
