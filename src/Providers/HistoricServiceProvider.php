@@ -20,6 +20,7 @@ class HistoricServiceProvider extends ServiceProvider
         $this->publishes([__DIR__ . '/../../config/cw_historic.php' => config_path('cw_historic.php')], 'config');
 
         Blade::component('historic::components.list', 'historic');
+        Blade::component('historic::components.historics', 'historics');
     }
 
     /**
