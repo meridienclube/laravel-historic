@@ -16,6 +16,9 @@
     ],
     "require": {},
     "autoload": {
+        "files": [
+            "src/Helpers/class_historic.php"
+        ],
         "psr-4": {
             "ConfrariaWeb\\Historic\\": "src"
         }
