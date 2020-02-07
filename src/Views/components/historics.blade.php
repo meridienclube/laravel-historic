@@ -53,7 +53,7 @@
             </div>
         </div>
     @empty
-        <p>{{ __('historics.none') }}</p>
+        {{ __('Nenhum histórico encontrado.') }}
     @endforelse
 </div>
 
