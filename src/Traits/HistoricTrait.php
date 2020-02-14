@@ -8,7 +8,7 @@ use Auth;
 trait HistoricTrait
 {
 
-    public function register($historic){
+    public function registerHistoric($historic){
         $data['data'] = $historic->data();
         $data['title'] = $historic->title();
         $data['user_id'] = $historic->user('id');
