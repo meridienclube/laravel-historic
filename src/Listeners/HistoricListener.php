@@ -30,7 +30,7 @@ class HistoricListener
             $obj = ($event->obj) ? $event->obj : null;
             $historic = isset($event->historic) ? $event->historic : NULL;
             if (isset($obj) && isset($historic)) {
-                $obj->register($historic);
+                $obj->registerHistoric($historic);
             }
         }
     }
